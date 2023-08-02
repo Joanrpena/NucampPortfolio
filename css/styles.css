@@ -9,11 +9,7 @@ li {
     list-style: none;
 }
 .navbar {
-    background: linear-gradient(to right, #5452f3, #4aa5c6, #0989d8);
-    padding: 30px;
+    background: linear-gradient(to right, #060606, #262828, #737374);
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
-
-.nav-link {
-    color: rgb(17, 10, 10);
-}
-
