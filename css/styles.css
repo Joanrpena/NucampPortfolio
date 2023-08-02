@@ -1,3 +1,5 @@
+
+
 em {
     color: #068379;
 }
@@ -6,6 +8,12 @@ em {
 li {
     list-style: none;
 }
-.navbar{
-    background-color: #03a781;
+.navbar {
+    background: linear-gradient(to right, #5452f3, #4aa5c6, #0989d8);
+    padding: 30px;
 }
+
+.nav-link {
+    color: rgb(17, 10, 10);
+}
+
