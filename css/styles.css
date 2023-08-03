@@ -1,4 +1,6 @@
-
+body{
+    font-family: "Open Sans", sans-serif;
+}
 
 em {
     color: #068379;
@@ -10,11 +12,20 @@ li {
 }
 .navbar {
     background: linear-gradient(to right, #060606, #262828, #737374);
-    padding-top: 30px;
-    padding-bottom: 30px;
 }
 
 #professional {
     width: 15em;
     height: auto;
 }
+
+.navbar {
+    background-image: linear-gradient(to right, #e7eff0, #d1dada, #bcc5c5, #a7b0b0, #939c9c);
+}
+
+header {
+    padding-top: 15px;
+    padding-bottom: 10px;
+    background: linear-gradient(to right, #060606, #262828, #737374);
+}
+

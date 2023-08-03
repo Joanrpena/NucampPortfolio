@@ -10,15 +10,26 @@
     <!--Additional CSS-->
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster|Open+Sans" />
     <title>Joan Pena Portfolio</title>
 </head>
 <body>
+
 <header>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-4 col-md-4 ms-3 mt-2">
+                <h1 class="text-light">Joan Pena</h1>
+                <h2 class="text-light">Full Stack Developer</h2>
+            </div>  
+        </div>
+    </div>
+</header>
+
 <!--Navbar-->
-    <nav> 
+   <nav> 
         <div class="navbar navbar-expand-sm sticky-top">
-                <div class="container-fluid">
-                    <a href="#" class="navbar-brand text-white">Joan Pena</a>
+                 <div class="container-fluid">
                     <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse"
                         data-bs-target="#navbarNav">
                         <span class="navbar-toggler-icon"></span>
@@ -26,13 +37,13 @@
                     <div class="collapse navbar-collapse" id="navbarNav">
                         <ul class="navbar-nav">
                             <li class="navbar-item">
-                                <a class="nav-link active text-white" href="#about"><i class="fa-solid fa-book"></i></i>About</a>
+                                <a class="nav-link active text-dark" href="#about"><i class="fa-solid fa-book me-1"></i></i>About</a>
                             </li>
                             <li class="navbar-item">
-                                <a class="nav-link text-white" href="projects.html"><i class="fa-solid fa-briefcase"></i>Projects</a>
+                                <a class="nav-link text-dark" href="projects.html"><i class="fa-solid fa-briefcase me-1"></i>Projects</a>
                             </li>
                             <li class="navbar-item">
-                                <a class="nav-link text-white" href="#contact"><i class="fa-solid fa-address-book"></i>Contact</a>
+                                <a class="nav-link text-dark" href="#contact"><i class="fa-solid fa-address-book me-1"></i>Contact</a>
                             </li>
                         </ul>
                     </div>
@@ -43,10 +54,9 @@
 
 
     
-</header>
-
 <main>
-    <section id="about">
+    <!--About-->
+    <section>
         <div class="container">
             <div class="row">
                 <div id="about" class="col-sm text-center mt-4">
@@ -70,7 +80,8 @@
             </div>
         </div>
     </section>
-
+    
+    <!--Tech stack-->
     <section>
         <div class="container shadow-lg p-3 mb-5 bg-light rounded w-75">
             <div class="row">
@@ -86,23 +97,61 @@
                         <div class="col-sm"><i class="stack fa-brands fa-python" style="color: #084ec0;"></i><li>Python</li></div>
 
                     </div>
-
-
-                        
+            </div>
+        </div>
+    </section>
+    
+    <!--Projects-->
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm text-center mb-4 me-3">
+                    <h2>Projects</h2>
+                </div>
+            </div>
+        <div class="row justify-content-center">
+            <div class="col-sm">
+                <div class="card mb-3" style="max-width: 540px;">
+                    <div class="row g-0">
+                      <div class="col-md-4">
+                        <img src="images/nucamp project.png" class="img-fluid rounded-start" alt="Nucamp Site">
+                      </div>
+                      <div class="col-md-8">
+                        <div class="card-body">
+                            <h5 class="card-title">Nucamp Site</h5>
+                            <p class="card-text">A fictional website where customers can reserve a campsite.</p>
+                            <p class="card-text"><small class="text-muted">HTML|CSS|Bootstrap</small></p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+        
+            <div class="col">
+                <div class="card mb-3" style="max-width: 540px;">
+                    <div class="row g-0">
+                    <div class="col-md-4">
+                        <img src="images/landing page.png" class="img-fluid rounded-start" alt="...">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <h5 class="card-title">Landing Page</h5>
+                            <p class="card-text">My first project. A mock landing page from The Odin Project.</p>
+                            <p class="card-text"><small class="text-muted">HTML|CSS|Flexbox</small></p>
+                        </div>
+                    </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
-    <section id="Projects">
-        <h2>Projects</h2>
-    </section>
 
 
 
-
-
-    <section id="contact">
-        <div class="container text-center">
+    <!--Contact Form-->
+    <section>
+        <div class="container text-center mt-5 mb-5">
             <div class="row">
 
                 <div class="row justify-content-center">
@@ -136,12 +185,14 @@
                             <label for="message">Your Message</label>
                             <textarea class="form-control" id="message" name="message" rows="8"></textarea>
                         </div>
-                        <button class=" form-control" type="submit">Submit</button>
                     </div>
+                        <button class="form-control btn btn-primary btn-md w-25" type="submit">Submit</button>
                 </form>
             </div>
         </div>
     </section>
+
+
 </main>
 
 
