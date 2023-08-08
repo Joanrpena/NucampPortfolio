@@ -5,11 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!--Bootstrap CSS-->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
-
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css"/>
     <!--Additional CSS-->
     <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <link rel="stylesheet" href="/node_modules/@fortawesome/fontawesome-free/css/fontawesome.css"/>
+    <link rel="stylesheet" href="/node_modules/@fortawesome/fontawesome-free/css/brands.css"/>
+    <link rel="stylesheet" href="/node_modules/@fortawesome/fontawesome-free/css/solid.css"/>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster|Open+Sans" />
     <title>Joan Pena Portfolio</title>
 </head>
@@ -40,7 +41,7 @@
                                 <a class="nav-link active text-dark" href="#about"><i class="fa-solid fa-book me-1"></i></i>About</a>
                             </li>
                             <li class="navbar-item">
-                                <a class="nav-link text-dark" href="projects.html"><i class="fa-solid fa-briefcase me-1"></i>Projects</a>
+                                <a class="nav-link text-dark" href="#projects"><i class="fa-solid fa-briefcase me-1"></i>Projects</a>
                             </li>
                             <li class="navbar-item">
                                 <a class="nav-link text-dark" href="#contact"><i class="fa-solid fa-address-book me-1"></i>Contact</a>
@@ -65,8 +66,9 @@
                         <img id="professional" class="img-thumbnail mb-3 mt-2" src="images/professional.jpg" alt="Photo of me inside a HMVWW">
                         <p>
                             Hello, my name is Joan Pena.
-                            I am a veteran who recently transitioned out of the United States Army. Currently, I am a student at Nucamp Bootcamp. I am acively enrolled in the Web Development Fundamentals Course.
-                            My next step in my journey as an aspiring Full Stack Developer will be to enroll in the Full Stack Development course.
+                            I am a veteran who recently transitioned out of the United States Army. Currently, I am a student at Nucamp Bootcamp. I recently completed the Web Development Fundamentals course.
+                            I learned to work with HTML, CSS, and Bootstrap.
+                            I am actively enrolled in the Full Stack Development course, upon completion I will be proficient with the MERN stack(MongoDB, Express, React, Node).
                             After enrolling in Nucamp and self learning for the last couple of months I realize, I have a passion for problem solving
                             and creativity. I love working with others, and cannot wait to build my first real world product!
                         </p>
@@ -106,7 +108,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-sm text-center mb-4 me-3">
-                    <h2>Projects</h2>
+                    <h2 id="projects">Projects</h2>
                 </div>
             </div>
         <div class="row justify-content-center">
@@ -114,7 +116,7 @@
                 <div class="card mb-3" style="max-width: 540px;">
                     <div class="row g-0">
                       <div class="col-md-4">
-                        <img src="images/nucamp project.png" class="img-fluid rounded-start" alt="Nucamp Site">
+                        <a href="https://jrpenanucamp2023.web.app/"><img src="images/nucamp project.png" class="img-fluid rounded-start" alt="Nucamp Site"></a>
                       </div>
                       <div class="col-md-8">
                         <div class="card-body">
@@ -131,7 +133,7 @@
                 <div class="card mb-3" style="max-width: 540px;">
                     <div class="row g-0">
                     <div class="col-md-4">
-                        <img src="images/landing page.png" class="img-fluid rounded-start" alt="...">
+                        <a href="https://joanrpena.github.io/landing-page/"><img src="images/landing page.png" class="img-fluid rounded-start" alt="Snap shot on my landing page"></a>
                     </div>
                     <div class="col-md-8">
                         <div class="card-body">
@@ -156,7 +158,7 @@
 
                 <div class="row justify-content-center">
                     <div class="col-sm">
-                        <h1>Contact Me! <em>Under Construction</em></h1>
+                        <h1 id="contact">Contact Me! <em>Under Construction</em></h1>
                     </div>
                 </div>
                 <form>
@@ -211,9 +213,9 @@
 
 
 <!--Bootstrap JS-->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+<script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
 
-<!--Font Awesome CDN-->
+
 
 </body>
 </html>
